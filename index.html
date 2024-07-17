@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Todo app</title>
+
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+				display: none;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+
+		<script defer src="script.js"></script>
+	</head>
+	<body>
+		<main class="main-frame">
+			<div class="bg-img-container">
+				<img
+					src="./images/bg-desktop-light.jpg"
+					alt="Image Of Mountains"
+					class="bg-image"
+				/>
+			</div>
+			<div class="todo">
+				<div class="todo-title mg-bottom-md">
+					<h1>Todo</h1>
+
+					<div class="title-img-container">
+						<img
+							src="./images/icon-moon.svg"
+							alt="image of an moon"
+							class="theme-switch"
+						/>
+					</div>
+				</div>
+
+				<div class="todo-input">
+					<input
+						class="add-task"
+						type="text"
+						placeholder="Create a new todo..."
+					/>
+				</div>
+
+				<div class="todo-body">
+					<div class="tasks"></div>
+
+					<div class="todo-stats mg-bottom-md">
+						<span class="items-left"
+							><span class="left-quantity">0</span> items
+							left</span
+						>
+						<div class="sort">
+							<span class="active-sort" data-value="all"
+								>All</span
+							>
+							<span data-value="active">Active</span>
+							<span data-value="completed">Completed</span>
+						</div>
+						<span class="clear-completed">Clear Completed</span>
+					</div>
+				</div>
+
+				<!-- Add dynamic number -->
+				<!-- Drag and drop to reorder list -->
+			</div>
+		</main>
+
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
+</html>
